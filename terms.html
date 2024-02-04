@@ -9,7 +9,7 @@
         document.addEventListener('DOMContentLoaded', async function () {
             try {
                 // Fetch the MD file using the Fetch API with async/await
-                const response = await fetch("terms.md");
+                const response = await fetch("/assets/terms.md");
 
                 if (!response.ok) {
                     throw new Error(`Failed to fetch MD file: ${response.statusText}`);
